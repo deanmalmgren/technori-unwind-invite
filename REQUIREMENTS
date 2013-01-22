@@ -1,0 +1,12 @@
+# to install virtualenv, run the following sequence of commands:
+#
+#     [shell]$ virtualenv --no-site-packages --setuptools env
+#     [shell]$ virtualenv env 
+#     [shell]$ source env/bin/activate
+#     (env)[shell]$ pip install -r REQUIREMENTS
+#
+# to work within this virtualenv, simply run
+#
+#     [shell]$ source env/bin/activate
+
+Scrapy

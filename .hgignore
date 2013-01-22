@@ -1,4 +1,8 @@
 syntax: glob
 
+# ignore junk files
 *.pyc
 *~
+
+# ignore the virtual environment
+env/
