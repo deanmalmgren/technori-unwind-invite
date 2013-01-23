@@ -27,9 +27,13 @@ ITEM_PIPELINES = [
 
 # wait between 0.5*DOWNLOAD_DELAY ms and 1.5*DOWNLOAD_DELAY ms before
 # requesting next page from the same spider
-DOWNLOAD_DELAY = 1.0 
+DOWNLOAD_DELAY = 3.0
 RANDOMIZE_DOWNLOAD_DELAY = True
 
-# # use a local cache instead of hitting the webpage during debugging
-# HTTPCACHE_ENABLED = True
-# HTTPCACHE_EXPIRATION_SECS = 0 # Set to 0 to never expire
+# reduce log spew http://stackoverflow.com/questions/14390945
+LOG_LEVEL = 'INFO'
+
+# use a local cache instead of hitting the webpage during debugging
+HTTPCACHE_ENABLED = True
+HTTPCACHE_EXPIRATION_SECS = 0 # Set to 0 to never expire
+

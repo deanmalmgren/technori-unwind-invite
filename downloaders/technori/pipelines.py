@@ -43,7 +43,6 @@ class RemoveStopwords(object):
     """remove stopwords from the analysis"""
     stopwords = set(nltk.corpus.stopwords.words('english'))
     def process_item(self, item, spider):
-        print self.stopwords
         item["text"] = ' '.join(
             w for w in item["text"].split() if w not in self.stopwords
         )
