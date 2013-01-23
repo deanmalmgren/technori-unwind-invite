@@ -10,3 +10,6 @@
 #     [shell]$ source env/bin/activate
 
 Scrapy
+numpy
+pyyaml
+nltk

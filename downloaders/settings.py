@@ -21,6 +21,8 @@ ITEM_PIPELINES = [
     'technori.pipelines.RemoveWhitespace',
     'technori.pipelines.RemovePunctuation',
     'technori.pipelines.LowerCase',
+    'technori.pipelines.RemoveNumbers',
+    'technori.pipelines.RemoveStopwords',
 ]
 
 # use a local cache instead of hitting the webpage during debugging
