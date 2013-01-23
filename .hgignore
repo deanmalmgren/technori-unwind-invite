@@ -6,3 +6,6 @@ syntax: glob
 
 # ignore the virtual environment
 env/
+
+# ignore the scrapy caching
+*.scrapy
