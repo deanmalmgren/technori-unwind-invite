@@ -25,6 +25,11 @@ ITEM_PIPELINES = [
     'technori.pipelines.RemoveStopwords',
 ]
 
-# use a local cache instead of hitting the webpage during debugging
-HTTPCACHE_ENABLED = True
-HTTPCACHE_EXPIRATION_SECS = 0 # Set to 0 to never expire
+# wait between 0.5*DOWNLOAD_DELAY ms and 1.5*DOWNLOAD_DELAY ms before
+# requesting next page from the same spider
+DOWNLOAD_DELAY = 1.0 
+RANDOMIZE_DOWNLOAD_DELAY = True
+
+# # use a local cache instead of hitting the webpage during debugging
+# HTTPCACHE_ENABLED = True
+# HTTPCACHE_EXPIRATION_SECS = 0 # Set to 0 to never expire
