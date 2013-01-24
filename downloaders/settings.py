@@ -9,7 +9,8 @@
 BOT_NAME = 'technori'
 
 SPIDER_MODULES = [
-    'technori.spiders'
+    'technori.spiders',
+    'wikipedia.spiders',
 ]
 NEWSPIDER_MODULE = 'technori.spiders'
 
